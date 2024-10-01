@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(122, 72, 169);
+}
+.card{
+    background: white;
+    padding: 7px;
+    border: 1px solid black;
+    margin: 20px;
+    margin-right: 450px;
+}
+::-webkit-scrollbar{
+    background-color:transparent;
+    width: 10px;
+    border: 2px  white;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#21d4fd, #b721ff);
+    border-radius: 100px;
+}
