@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero{
+    padding: 0 5%;
+    display: flex;
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.backvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.content{
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 140px;
+    font-weight: 600px;
+    transition: 0.3s;
+}
+h1:hover{
+    -webkit-text-stroke: 2px white;
+    color:transparent;
+}
+.content a{
+    
+    font-size: 24px;
+    text-decoration: none;
+    padding:9px 44px;
+    margin-top: 20px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+
+}
+.content a:hover{
+   background-color: white;
+    color: black;
+}
+@media (min-aspect-ratio:16/9) {
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9) {
+    .backvideo{
+        width: auto;
+        height: 100%;
+    }
+}
