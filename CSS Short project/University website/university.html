@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="university.css">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>University Website</title>
+</head>
+<body>
+ <section class="header">
+    <nav>
+        <a href="index.html"><img src="eduford_img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" oneclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Cousre</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Content</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" oneclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Bangladesh University of Professionals (BUP)</h1>
+        <p>Welcome to the website of Bangladesh University of Professionals (BUP). BUP is one of the leading public universities established on June 5, 2008 with it’s motto "Excellence Through Knowledge". BUP is established in a lush green landscape with own unique features located away from busy life of metropolitan city. The university provides a tranquil, pollution free, secured campus life, with uninterrupted congenial academic atmosphere. BUP welcomes students who will dedicate their attention and devotion to serious academic pursuit to build up better tomorrow for the nation.</p>
+         <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+ </section>
+   <!---courese----->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Accusamus dignissimos accusantium, eaque aliquam quos
+              tempora veniam iure incidunt laborum repudiandae.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Fugiat, nihil? Inventore impedit vel labore sint 
+                 exercitationem reiciendis ratione eligendi suscipit
+                  placeat mollitia aspernatur, dolor neque.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Fugiat, nihil? Inventore impedit vel labore sint 
+                 exercitationem reiciendis ratione eligendi suscipit
+                  placeat mollitia aspernatur, dolor neque.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Fugiat, nihil? Inventore impedit vel labore sint 
+                 exercitationem reiciendis ratione eligendi suscipit
+                  placeat mollitia aspernatur, dolor neque.</p>
+        </div>
+    </div>
+
+
+
+            </section>
+
+
+          <!----campus-->
+          <section class="campus">
+            <h1>Our Global Campus</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, perspiciatis.</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="eduford_img/london.png">
+                    <div class="layer">
+                        <h3>London</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="eduford_img/newyork.png">
+                    <div class="layer">
+                        <h3>New York</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="eduford_img/washington.png">
+                    <div class="layer">
+                        <h3>Washinngton</h3>
+                    </div>
+                </div>
+            </div>
+               
+              
+        </section>
+
+      <!-----Facilities-->
+      <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, 
+      consectetur adipisicing elit. Itaque, nihil.</p>
+      <div class="row">
+        <div class="facilities-col">
+            <img src="eduford_img/library.png">
+            <h3>World Class Liabray</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Nostrum sed aperiam assumenda laboriosam placeat
+                  mollitia excepturi,
+                 quisquam quod cum tenetur!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="eduford_img/basketball.png">
+            <h3>Largest Play Ground</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Nostrum sed aperiam assumenda laboriosam placeat
+                  mollitia excepturi,
+                 quisquam quod cum tenetur!</p>
+        </div>
+        <div class="facilities-col">
+            <img src="eduford_img/cafeteria.png">
+            <h3>Testy And Helthy Food</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Nostrum sed aperiam assumenda laboriosam placeat
+                  mollitia excepturi,
+                 quisquam quod cum tenetur!</p>
+        </div>
+      </div>
+      </section>
+
+
+
+
+
+   <!----java script----->
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+ </script>
+ <!-- ------testimonial----- -->
+  <section class="testimonial">
+    <h1>What Our Student Says</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, perspiciatis.</p>
+      <div class="row">
+        <div class="testimonial-col">
+            <img src="eduford_img/user1.jpg">
+        
+        <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur architecto fugit deserunt voluptates
+             sequi quisquam necessitatibus alias eum nisi libero?</p>
+          <h3>Christine Berkley</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+            </div>
+      </div>
+      <div class="testimonial-col">
+        <img src="eduford_img/user2.jpg">
+    
+    <div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur architecto fugit deserunt voluptates
+         sequi quisquam necessitatibus alias eum nisi libero?</p>
+      <h3>David Byer</h3>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half"></i>
+        </div>
+  </div>
+    </div>
+        </section>
+
+
+        <!--------call to action------->
+        <section class="cta">
+            <h1>Enroll Our Various Online Course<br>Anywhere form The World</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+        </section>
+        <!-----footer----->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime labore eos cupiditate esse. Saepe unde magni soluta ullam vel,<br>pariatur 
+                maxime aliquam repellendus, officiis iusto voluptatem, ea facere maiores assumenda!</p>
+        <div class="icon">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Mehedi Hasan</p>
+     </section>
+</body>
+</html>
