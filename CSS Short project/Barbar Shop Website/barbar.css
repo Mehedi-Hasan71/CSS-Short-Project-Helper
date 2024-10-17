@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding:0;
+}
+#banner{
+    background:linear-gradient(rgba(0,0,0,0.5),#009688),url(Barber_Shop_img/banner.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    position: absolute;
+    top:4%;
+    left: 10%;
+    width: 160px;
+   
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-style: italic;
+}
+.banner-text p{
+   
+    font-size: 19px;
+}
+.banner-btn{
+    padding-top: 45px; 
+   
+}
+.banner-btn a{
+    text-decoration: none;
+   
+    color: white;
+    padding: 10px 30px;
+    border: 0.5px solid white;
+    margin:0px 16px;
+    font-size: 22px;
+    position: relative;
+    transition: color 0.5s;
+    display: inline-block;
+    z-index: 1;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+    position: absolute;
+   
+}
+.banner-btn a:hover span{
+width: 100%;
+
+background: #fff;
+
+}
+.banner-btn a:hover{
+   
+   color: black;
+}
+#sideNav{
+    top:0;
+    right: -240px;
+    position: fixed;
+    width: 240px;
+    height: 100vh;
+    background: #009688;
+    transition: .5s;
+}
+#sideNav ul li{
+    list-style: none;
+    margin: 20px 20px;
+}
+#sideNav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+#menubtn{
+    position: fixed;
+    top:20px;
+    right:30px;
+    color:whitesmoke;
+   font-size: 30px;
+   z-index: 4;
+   background-color: #009688;
+   display: inline-block;
+   padding: 2px 5px;
+}
+     /* -----feature------ */
+#feture{
+    padding:70px 0;
+    width: 100%;
+   
+}
+.title-text{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 70px;
+    
+}
+.title-text p{
+    color: #009688;
+    font-size: 26px;
+    position: relative;
+    display: inline-block;
+}
+.title-text h1{
+    font-size: 50px;
+}
+.title-text p::after{
+    content: '';
+    top:-18px;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(#019587,#fff);
+    width: 50px;
+    height: 25px;
+    
+    border-top-left-radius: 35px;
+    border-bottom-right-radius:35px;
+   
+    z-index: -1;
+
+}
+.feature-box{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+    
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+.feature-icon .fa{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #009688;
+    color: #009688;
+    padding:1px 1px;
+  
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .feature-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+   
+  }
+.feature-text p {
+    padding: 0 20px;
+    text-align:initial;
+}
+.yes{
+    display: flex;
+}
+/* ------service------ */
+#service{
+  
+    width: 100%;
+    background: #efefef;
+    padding: 70px 0;
+    margin-top: 60px;
+ 
+}
+.service-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    
+}
+.single-service{
+ flex-basis: 48%;
+ text-align: center;
+ border-radius: 7px;
+ color: #fff;
+ margin-bottom: 20px;
+ position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 99%;
+   
+    position: absolute;
+    background:linear-gradient(rgba(0,0,0,0.5),#009688);
+    top:0;
+    border-radius: 7px;
+    flex-basis: 48%;
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.service-dec{
+    width: 80%;
+    position: absolute;
+    
+   bottom: -40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 2s;
+}
+hr{
+    width: 55px;
+    height: 2px;
+    background: #fff;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-dec p{
+    font-size: 14px;
+    color: white;
+}
+.single-service:hover .service-dec{
+      bottom: 25%;
+   
+    opacity: 1;
+}
+/* ------testimonial------ */
+.testimonial{
+    padding: 70px 0;
+    width: 100%;
+}
+.testimonial-row{
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+justify-content: space-between;
+align-items: flex-start;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    transition: 0.5s;
+    background: rgb(232, 223, 232);
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+ 
+
+}
+.user img{
+    width: 40px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+.user-info .fa-brands{
+    font-size: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.user-info small{
+    color: #009688;
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+
+/* ------footer----- */
+#footer{
+    padding: 100px 0 20px;
+    background:#efefef;
+    position: relative;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-left{
+    text-align: left;
+    margin-top: 15px;
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-row h1{
+   margin: 7px 0;
+}
+.footer-row p{
+    line-height: 20px;
+ }
+ .footer-right .fa{
+    color: #009688;
+}
+.footer-left .fa{
+    color: #009688;
+}
+.footer-img{
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    height: auto;
+    opacity: 0.1;
+    margin-top: 25px;
+
+}
+.scocial-links{
+    text-align: center;
+    font-size: 35px;
+  
+    
+}
+.scocial-links .fa-brands{
+    border: 1px solid #009688;
+    padding: 5px 5px;
+    margin: 0  3px 30px;
+    transition: .5s;
+    color: #009688;
+}
+.scocial-links .fa-brands:hover{
+   background: #009688;
+   color: #efefef;
+   transform: translateY(-7px);
+}
+.scocial-links p{
+    font-size: 16px;
+    margin-top: -20px;
+}
